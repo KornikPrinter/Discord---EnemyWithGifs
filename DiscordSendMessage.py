@@ -11,5 +11,5 @@ header = {'Authorization': f'{DiscordToken}'}
 for i in range(len(gifs)):
     payload = {'content' : f'{gifs[i]}'}
     x = requests.post(url, payload,  headers = header)
-    time.sleep(0.5)
-    print(x.text)
+    time.sleep(0.5) #I dont recommend setting it much lower as you can get rate limited with >5messages a second
+    print(x.text) #'debug' can remove
